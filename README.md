@@ -2,6 +2,8 @@
 
 Application for displaying and demoing Pop Shell shortcuts.
 
+This fork is meant to be installed with [this custom keybindings script](https://github.com/bennettip/pop-shell-custom-keybindings).
+
 ![](screenshot.png)
 
 ## Dependencies
