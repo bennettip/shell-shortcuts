@@ -26,7 +26,7 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Launch and switch applications",
                 Event::Search,
-                Schema::Hardcoded(&["Super", "/"]),
+                Schema::Hardcoded(&["Super", "D"]),
             ),
             Shortcut::new(
                 "Switch focus between windows",
@@ -41,22 +41,22 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Enter adjustment mode",
                 Event::EnterAdjustment,
-                Schema::Hardcoded(&["Super", "Enter"]),
+                Schema::Hardcoded(&["Super", "R"]),
             ),
             Shortcut::new(
                 "Move window",
                 Event::MoveWindow,
-                Schema::Hardcoded(&["←", "↓", "↑", "→"]),
+                Schema::Hardcoded(&["Shift", "←", "↓", "↑", "→"]),
             ),
             Shortcut::new(
                 "Increase Window Size",
                 Event::ResizeWindowIncrease,
-                Schema::Hardcoded(&["Shift", "→", "↓"]),
+                Schema::Hardcoded(&["→", "↓"]),
             ),
             Shortcut::new(
                 "Decrease Window Size",
                 Event::ResizeWindowDecrease,
-                Schema::Hardcoded(&["Shift", "←", "↑"]),
+                Schema::Hardcoded(&["←", "↑"]),
             ),
             Shortcut::new(
                 "Swap windows",
@@ -77,22 +77,22 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Move current window up one workspace",
                 Event::MoveWorkspaceAbove,
-                Schema::Hardcoded(&["Super", "Shift", "↑"]),
+                Schema::Hardcoded(&["Ctrl", "Shift", "Alt", "↑"]),
             ),
             Shortcut::new(
                 "Move current window down one workspace",
                 Event::MoveWorkspaceBelow,
-                Schema::Hardcoded(&["Super", "Shift", "↓"]),
+                Schema::Hardcoded(&["Ctrl", "Shift", "Alt", "↓"]),
             ),
             Shortcut::new(
                 "Switch focus to the workspace above",
                 Event::MoveWorkspaceAbove,
-                Schema::Hardcoded(&["Super", "Ctrl", "↑"]),
+                Schema::Hardcoded(&["Ctrl", "Alt", "↑"]),
             ),
             Shortcut::new(
                 "Switch focus to the workspace below",
                 Event::MoveWorkspaceBelow,
-                Schema::Hardcoded(&["Super", "Ctrl", "↓"]),
+                Schema::Hardcoded(&["Ctrl", "Alt", "↓"]),
             ),
             Shortcut::new(
                 "Move current window to leftward monitor",
@@ -107,12 +107,12 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Move current window to upper monitor",
                 Event::MoveMonitorUp,
-                Schema::Hardcoded(&["Super", "Shift", "Ctrl", "↑"]),
+                Schema::Hardcoded(&["Super", "Shift", "↑"]),
             ),
             Shortcut::new(
                 "Move current window to lower monitor",
                 Event::MoveMonitorDown,
-                Schema::Hardcoded(&["Super", "Shift", "Ctrl", "↓"]),
+                Schema::Hardcoded(&["Super", "Shift", "↓"]),
             ),
         ],
     ),
@@ -127,7 +127,7 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Toggle floating mode",
                 Event::FloatingToggle,
-                Schema::Hardcoded(&["Super", "G"]),
+                Schema::Hardcoded(&["Super", "Shift", "Space"]),
             ),
             Shortcut::new(
                 "Toggle auto-tiling",
@@ -137,17 +137,17 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Toggle stacking mode",
                 Event::Stacking,
-                Schema::Hardcoded(&["Super", "S"]),
+                Schema::Hardcoded(&["Super", "W"]),
             ),
             Shortcut::new(
                 "Close window",
                 Event::CloseWindow,
-                Schema::Hardcoded(&["Super", "Q"]),
+                Schema::Hardcoded(&["Super", "Shift", "Q"]),
             ),
             Shortcut::new(
                 "Toggle maximize",
                 Event::MaximizeToggle,
-                Schema::Hardcoded(&["Super", "M"]),
+                Schema::Hardcoded(&["Super", "F"]),
             ),
         ],
     ),
@@ -157,7 +157,7 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Activate Launcher",
                 Event::Search,
-                Schema::Hardcoded(&["Super", "/"]),
+                Schema::Hardcoded(&["Super", "D"]),
             ),
             Shortcut::new(
                 "Scroll through the Launcher list (or use Arrow keys)",
